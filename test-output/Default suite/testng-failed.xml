@@ -6,8 +6,8 @@
       <class name="test.FaceBookLoginTest">
         <methods>
           <include name="openBrowser"/>
-          <include name="LoginWithValidUserNameAndPassword"/>
           <include name="LoginWithInvalidUserNameAndValidPass"/>
+          <include name="createNewAccountTest"/>
           <include name="publishReports"/>
           <include name="addTestStatus"/>
           <include name="configureReports"/>

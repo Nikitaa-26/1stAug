@@ -9,7 +9,7 @@ public class Reports {
 		 ExtentReports reports=new ExtentReports();
 		 reports.attachReporter(htmlReporter);
 		 reports.setSystemInfo("Version","5.1");
-		 reports.setSystemInfo("Created By", "Ishwar");
+		 reports.setSystemInfo("Created By", "Nikita");
 		 reports.setSystemInfo("Testing Type", "Regression");
 		 return reports; 
 	}

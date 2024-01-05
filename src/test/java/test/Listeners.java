@@ -7,9 +7,9 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import utility.Screenshot;
-
+//implements ITestListener its a interface means we can complete its methods
 public class Listeners extends BaseTest implements ITestListener{
-	WebDriver driver;
+
    public void onTestStart(ITestResult result) {
 	   System.out.println("Test Started :"+ result.getName());
    }

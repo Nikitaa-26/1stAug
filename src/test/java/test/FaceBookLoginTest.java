@@ -19,7 +19,7 @@ import pojo.Browser;
 import pom.FaceBookLoginPage;
 import utility.Reports;
 @Listeners(test.Listeners.class)
-public class FaceBookLoginTest  extends BaseTest{
+public class FaceBookLoginTest extends BaseTest{
        
         ExtentReports extentsReport;
         ExtentTest Test;
@@ -44,10 +44,9 @@ public class FaceBookLoginTest  extends BaseTest{
       
  	 @Test(timeOut= 1000,priority=2)
  	  public void LoginWithInvalidUserNameAndValidPass() throws InterruptedException {
- 		 
- 		 Test=extentsReport.createTest("LoginWithInvalidUserNameAndValidPass");
- 		Thread.sleep(3000);
- 		 FaceBookLoginPage faceBookLoginPage = new FaceBookLoginPage(driver);
+     	  Test=extentsReport.createTest("LoginWithInvalidUserNameAndValidPass");
+ 	      Thread.sleep(4000);
+ 		  FaceBookLoginPage faceBookLoginPage = new FaceBookLoginPage(driver);
  		  faceBookLoginPage.enterEmailId("a@jbmgmail.com");
  		  faceBookLoginPage.enterPassword("0000");
  		  faceBookLoginPage.clickOnLogin();
@@ -74,20 +73,20 @@ public class FaceBookLoginTest  extends BaseTest{
 			extentsReport.flush();
 	        }
  	 
- //      @Test
-//     public void createNewAccountTest()  {
-//    	   FaceBookLoginPage faceBookLoginPage = new FaceBookLoginPage(driver);
-//    	   faceBookLoginPage.clickOnCreateNewAcc();    	   
-//    	   faceBookLoginPage.enterFirstName("Nikita",driver);
-//    	   faceBookLoginPage.enterLastName("patil");
-//    	   faceBookLoginPage.enterMobileNo("8484982590");
-//    	   faceBookLoginPage.enterNewPass("123456");
-//    	   faceBookLoginPage.selectBirthDate("26");
-//    	   faceBookLoginPage.selectBirthMonth("August");
-//    	   faceBookLoginPage.selectBirthYear("2001");
-//    	   faceBookLoginPage.selectGender();  	   
-//    	   
-//       }
+       @Test (priority=3)
+     public void createNewAccountTest()  {
+    	   FaceBookLoginPage faceBookLoginPage = new FaceBookLoginPage(driver);
+    	   faceBookLoginPage.clickOnCreateNewAcc();    	   
+    	   faceBookLoginPage.enterFirstName("Nikita",driver);
+    	   faceBookLoginPage.enterLastName("patil");
+    	   faceBookLoginPage.enterMobileNo("8484982590");
+    	   faceBookLoginPage.enterNewPass("123456");
+    	   faceBookLoginPage.selectBirthDate("26");
+    	   faceBookLoginPage.selectBirthMonth("August");
+    	   faceBookLoginPage.selectBirthYear("2001");
+    	   faceBookLoginPage.selectGender();  	   
+    	   
+       }
        
      
  	
